@@ -1,0 +1,11 @@
+The commands you mentioned are generally used in a Git workflow, but let me provide you with a more detailed explanation for each command:
+
+git add .: This command adds all the current files in the directory to the staging area. The dot (.) represents the current directory. You can also use git add <file> to add specific files individually.
+
+git commit -m "what you want to say": After adding files to the staging area, you need to commit them to create a new snapshot in Git's history. The -m flag allows you to provide a commit message, which should briefly describe the changes made in the commit. For example, git commit -m "Add new feature".
+
+git push: Once you have committed your changes, you can push them to a remote repository (such as GitHub). This command uploads the committed changes from your local repository to the corresponding branch in the remote repository. Note that you need appropriate permissions to push to the remote repository.
+
+It's worth mentioning that these commands assume you have already initialized a Git repository in your local directory using git init and have properly configured the remote repository using git remote add origin <remote-url>. Additionally, if it's your first time pushing to the remote repository, you might need to specify the branch name, like git push -u origin <branch-name>, where <branch-name> is the branch where you want to push your changes.
+
+Overall, your understanding of the commands is correct, but it's always helpful to have a more detailed explanation to ensure a proper understanding of their usage in a Git workflow.
