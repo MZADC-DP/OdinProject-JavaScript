@@ -42,7 +42,23 @@ Understand the difference between single, double, and backtick quotes.
     ===
     !==
 
-    
+
     Understand what conditionals are.
+    If else statements. If this happens do that, else do something else
+
     Understand what nesting is.
+    Having something inside that something.
+    You have 1 for loop, and within that for loop, you have another for loop.
+
+
     Understand what truthy and falsy values are.
+
+    Falsy values are those that are "empty" or "not valuable" such as 
+    false
+    0
+    ""
+    null
+    undefined
+    NaN
+
+    Truthy is all those that are not Falsy
