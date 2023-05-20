@@ -85,3 +85,7 @@ JavaScript Developer Tools
             Open Inspect, Go To Sources To See JavaScript Code
         2. Pause Code With BreakPoints
             Same as C++, code will stop running at the breakpoint
+
+Fundamentals Part 3
+
+ Functions 
