@@ -67,13 +67,21 @@ This section contains a general overview of topics that you will learn in this l
 
 JavaScript Developer Tools 
     1. CSS
-        1. View and Change CSS
+        1. View and Change CSS - Completed
+            Use of DOM Tree in Inspect, adding of classes, changing css styles, usage of :hov, .cls and sidebar, able to change padding of element using the image 
         2. CSS Features References
 
     2. Viewing and Changing The DOM
+        Uses the inspect tool to allow changes to a website's property such as its style and classes.
+
 
     3. Mobile Simulation
-    
+        Open Inspect, Click the Mobile Button beside the Inspect Figure. 
+        Able to change the dimensions based on what phone you want to see the app on.
+        Allows you to see the app in various viewport modes.
+
     4. JavaScript
         1. Debug
+            Open Inspect, Go To Sources To See JavaScript Code
         2. Pause Code With BreakPoints
+            Same as C++, code will stop running at the breakpoint
