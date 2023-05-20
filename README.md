@@ -66,3 +66,14 @@ This section contains a general overview of topics that you will learn in this l
 
 
 JavaScript Developer Tools 
+    1. CSS
+        1. View and Change CSS
+        2. CSS Features References
+
+    2. Viewing and Changing The DOM
+
+    3. Mobile Simulation
+    
+    4. JavaScript
+        1. Debug
+        2. Pause Code With BreakPoints
