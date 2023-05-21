@@ -88,4 +88,13 @@ JavaScript Developer Tools
 
 Fundamentals Part 3
 
- Functions 
+    Lesson Overview
+
+    1. How to Define And Invoke Different Kinds Of Functions
+        Functions that are part of a object, are called methods.
+        Anything with () is a function.
+        Custom functions are those that are defined in the code, not in the browser.
+
+        To invoke the function, means to call the function's name somewhere else in the code followed by ()
+    2. How To Use The Return Value
+    3. What Function Scope Is.
