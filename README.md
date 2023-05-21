@@ -167,3 +167,5 @@ Fundamentals Part 3
             
             return str.charAt(str.length - 1); // Get the last character of the string
             }
+
+Problem Solving 
