@@ -117,7 +117,53 @@ Fundamentals Part 3
             console.log(`You pressed "${event.key}".`);
             });
 
-        Function Scope - Remember C++ scope lesson
-        
+
     2. How To Use The Return Value
+        Refers to the value returned by the function once it completes its process.
+
+        To use the return value, use the return keyword in the function.
+
+
     3. What Function Scope Is.
+        Lifetime of how long a variable/value/function exists.
+
+
+    Assignment
+
+        1. Write a function called add7 that takes one number and returns that number + 7.
+        My Answer:
+            function add7 (num) {
+                return num + 7;
+            }
+            console.log(add7(100)); // returns 107
+
+        
+        2. Write a function called multiply that takes 2 numbers and returns their product.
+            function multiply (num1, num2)
+            {
+                return num1 * num2;
+            }
+            console.log(multiply(7,7)); // returns 49
+
+        3. Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+            function capitalize(str) {
+            if (typeof str !== 'string' || str.length === 0) {
+                return str; // Return the input as it is if it's not a string or an empty string
+            }
+            
+            const firstLetter = str.charAt(0).toUpperCase(); // Get the first letter and convert it to uppercase
+            const restOfString = str.slice(1).toLowerCase(); // Get the rest of the string and convert it to lowercase
+            
+            return firstLetter + restOfString; // Concatenate the first letter and the rest of the string
+            }
+
+        4. Write a function called lastLetter that takes a string and returns the very last letter of that string: 
+            lastLetter("abcd") should return "d"
+
+            function lastLetter(str) {
+            if (typeof str !== 'string' || str.length === 0) {
+                return null; // Return null if the input is not a string or an empty string
+            }
+            
+            return str.charAt(str.length - 1); // Get the last character of the string
+            }
