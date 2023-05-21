@@ -96,5 +96,28 @@ Fundamentals Part 3
         Custom functions are those that are defined in the code, not in the browser.
 
         To invoke the function, means to call the function's name somewhere else in the code followed by ()
+
+        There are functions that require parameters whereas there are functions that have optional parameters or have default parameters.
+
+        Anonymous functions exists, they are functions without a name.
+        Example:
+            (function () {
+                alert("hello");
+            });
+
+        Arrow Functions can be used 
+        Example:
+            textBox.addEventListener("keydown", (event) => {
+            console.log(`You pressed "${event.key}".`);
+            });
+
+        Brackets are not needed if function only takes 1 parameter 
+        Example:
+            textBox.addEventListener("keydown", event => {
+            console.log(`You pressed "${event.key}".`);
+            });
+
+        Function Scope - Remember C++ scope lesson
+        
     2. How To Use The Return Value
     3. What Function Scope Is.
