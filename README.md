@@ -169,3 +169,22 @@ Fundamentals Part 3
             }
 
 Problem Solving 
+
+    Lesson Overview
+
+    1. Explain the 3 steps in the problem solving process.
+
+        1. Plan/Understanding the Problem
+           Know what the problem wants/needs.
+           Don't Write The Code Yet
+
+    2. Explain what a pseudocode is and be able to use it to solve problems.
+        1. Before coding the problem, write the steps to solve the problem into words.
+
+    3. Be able to break a problem down into subproblems.
+        1. Identify the subproblems of the big problem.
+        2. Solve the subproblems before solving the big problem.
+
+
+Understanding Errors
+
