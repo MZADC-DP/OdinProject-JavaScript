@@ -188,3 +188,29 @@ Problem Solving
 
 Understanding Errors
 
+    Lesson Overview
+
+    1. Name at least 3 kinds of JavaScript errors.
+
+        1.  ReferenceError - called when a variable is not intialized or declared in the current scope.
+
+        2.  SyntaxError - called when code is not written grammatically correctly.
+
+        3.  TypeError - an operand or argument passed to a function is incompatible with the type expected by that operator or function;
+                        or when attempting to modify a value that cannot be changed;
+                        or when attempting to use a value in an inappropriate way.
+
+    2. Identify 2 parts of an error message that can help you find where the error originates.
+        1. Stack
+        2. Console log where the file is mentioned and the line
+
+    3. Be able to understand how to research and solve errors.
+
+    4. Errors VS Warnings 
+        Errors will stop the program completely whereas Warnings will show the potential dangers that may crash the program at a certain point.
+        Errors are Red
+        Warnings are Yellow
+
+
+
+
