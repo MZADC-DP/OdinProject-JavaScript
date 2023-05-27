@@ -213,4 +213,12 @@ Understanding Errors
 
 
 
+DOM Manipulation And Events
 
+    Lesson Overview
+    1. DOM in relation to a webpage
+    2. Difference between a 'Node' and an 'Element'
+    3. Target Nodes using "Selectors"
+    4. Basic methods for finding/adding/removing and altering DOM Nodes
+    5. Difference between a 'Nodelist' and an 'Array Of Nodes'.
+    6. 'Bubbling' and how it works.
