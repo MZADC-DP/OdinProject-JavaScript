@@ -217,8 +217,53 @@ DOM Manipulation And Events
 
     Lesson Overview
     1. DOM in relation to a webpage
+        Document Object Model 
+            - Tree-like representation of the contents of a webpage
+
     2. Difference between a 'Node' and an 'Element'
+        - A Node represents an object that is part of the document structures. Nodes can be elements, attributes, text, or other types of objects within the document hierarchy.
+        - A element is a specific type of node that represents an HTML element.
+
     3. Target Nodes using "Selectors"
+        Element Selector: This targets all elements of a specific tag name. For example, to target all <p> elements, you would use the selector p.
+
+        Class Selector: This targets elements with a specific CSS class. To target elements with a class name "example", you would use the selector .example.
+
+        ID Selector: This targets a specific element with a unique ID. To target an element with an ID of "myElement", you would use the selector #myElement.
+
+        Attribute Selector: This targets elements that have a specific attribute or attribute value. For example, to target all <a> elements with a target attribute, you would use the selector a[target]. To target elements with a specific attribute value, you can use the attribute value within square brackets. For instance, to target all <a> elements with a href attribute starting with "https://", you would use the selector a[href^="https://"].
+
+        Pseudo-class Selector: This targets elements based on a specific state or condition. For example, you can target the first child of an element using the selector :first-child. Similarly, :hover targets an element when the mouse cursor is over it.
+
+        Combined Selectors: You can combine different selectors to target elements more precisely. For example, to target all <a> elements with the class "example", you would use the selector a.example.
     4. Basic methods for finding/adding/removing and altering DOM Nodes
+
+        Finding DOM Nodes:
+
+        getElementById(id): Returns the element with the specified ID.
+        querySelector(selector): Returns the first element that matches the specified CSS selector.
+        querySelectorAll(selector): Returns a NodeList containing all elements that match the specified CSS selector.
+        Adding DOM Nodes:
+
+        createElement(tagName): Creates a new element with the specified tag name.
+        createTextNode(text): Creates a new text node with the specified text content.
+        appendChild(node): Appends a node as the last child of a parent node.
+        insertBefore(newNode, referenceNode): Inserts a new node before a specified reference node.
+        Removing DOM Nodes:
+
+        removeChild(node): Removes a specified child node from its parent.
+        parentNode.removeChild(node): Removes a specified node by accessing its parent node.
+        Altering DOM Nodes:
+
+        setAttribute(name, value): Sets the value of the specified attribute on an element.
+        getAttribute(name): Returns the value of the specified attribute on an element.
+        innerHTML: Property that allows you to get or set the HTML content of an element.
+        textContent: Property that allows you to get or set the text content of an element.
+
     5. Difference between a 'Nodelist' and an 'Array Of Nodes'.
+        In summary, a NodeList is a collection of DOM nodes returned by certain methods and is typically live, automatically updating when the document changes. It has limited methods and properties compared to an Array. On the other hand, an Array of nodes is a standard JavaScript array that contains DOM nodes as its elements, with access to a wider range of methods and properties for array manipulation and traversal.
+
+
     6. 'Bubbling' and how it works.
+        Event Bubbling is allows for Parent Elements to be aware of what is happening to their child elements.
+        When a child element is triggered, it alerts the closest parent element in the DOM Heirarchy.
