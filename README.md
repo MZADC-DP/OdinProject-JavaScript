@@ -267,3 +267,6 @@ DOM Manipulation And Events
     6. 'Bubbling' and how it works.
         Event Bubbling is allows for Parent Elements to be aware of what is happening to their child elements.
         When a child element is triggered, it alerts the closest parent element in the DOM Heirarchy.
+
+
+Started on JavaScript Projects 30
