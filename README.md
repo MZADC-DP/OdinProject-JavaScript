@@ -295,3 +295,187 @@ Fundamentals Part 5
         };
 
     Every property has a Key before the colon :, and a value on the right of it.
+    Properties can be removed, deleted and added at any given time.
+
+    Example: To show the value of the Key
+
+        alert(user.name);
+        alert(user.age);
+
+    The syntaxes above are used to showcase the values within the key (name, age).
+
+    Example: To delete a property
+
+        delete user.age;
+
+    Example: Multiple words use for Property Key
+
+        let user =
+        {
+            name: "John",
+            age : 30,
+            "Likes Hobbies": true,
+        };
+
+    Multiword property names must be quoted.
+    Having a "trailing" or "hanging" comma, makes it easier to add/remove/move around properties, because all lines become alike.
+
+    Example: Square Brackets
+
+        user["Likes Hobbies"] = true;
+        alert(user["Likes Hobbies"]) // Returns true
+
+        let key = "Likes Hobbies";
+        user[key] = true; // Key = Likes Hobbies
+
+
+
+    Example: Computed Properties
+
+        let fruit = prompt("Which Fruit To Buy?", "apple");
+
+        let bag = 
+        {
+            [fruit] : 5,
+        }
+
+        alert(bag.apple); // Returns 5
+
+    Using Square Brackets in Object Literal when creating an Object, is called Computed Properties.
+
+
+    Example: Property Value Shorthand
+
+        function makeUser (name, age)
+        {
+            return { name:name, age:age};
+
+        }
+
+        let user = makeUser("John", 30);
+        alert(user.name);
+
+        When the key name and value name is the same, you can do this instead:
+
+        function makeUser (name, age)
+        {
+            return {name, age};
+        }
+
+    Example: Property Name Limitations
+
+        let Obj = 
+        {
+            for: 1,
+            let: 2,
+            return: 3,
+        };
+
+        Property names cannot be names of functions that already exists, any other names will work
+
+    Example: Keyword "In"
+
+        let user = {};
+        alert( user.NoSuchProperty === undefined); // Returns true if the property does not exists.
+
+        Keyword "in" is for this purpose.
+
+        let user = 
+        {
+            name : "John",
+            age  : 30,
+        }
+
+        alert("age" in user);   //Returns true if exists
+        alert("blabla" in user);  // Returns false as does not exist
+
+
+
+    Example: Quotes can be removed if replaced by a variable
+
+        let user = 
+        {
+            name: "John",
+        }
+        let newName = "name";
+
+        alert(newName in user); // Returns true if property exists.
+
+
+    Example: For .. In Loop
+
+    for (key in object)
+    {
+        ... 
+    }
+
+    let user = 
+    {
+        name : "John",
+        age  : 32,
+    };
+
+    for (let key in user)
+    {
+        alert(user[key];)
+    }
+
+
+    Example: Ordered Like An Object
+    
+    Are Objects ordered? 
+    In some ways, Yes. Objects are ordered if there is a integer value. Else it orders itself based on which object is created first.
+
+    let codes = {
+    "49": "Germany",
+    "41": "Switzerland",
+    "44": "Great Britain",
+    // ..,
+    "1": "USA"
+    };
+
+    for (let code in codes) {
+    alert(code); // 1, 41, 44, 49
+    }
+
+    let user = {
+    name: "John",
+    surname: "Smith"
+    };
+    user.age = 25; // add one more
+
+    // non-integer properties are listed in the creation order
+    for (let prop in user) {
+    alert( prop ); // name, surname, age
+    }
+
+
+    Summary
+    Objects are associative arrays with several special features.
+
+    They store properties (key-value pairs), where:
+
+    Property keys must be strings or symbols (usually strings).
+    Values can be of any type.
+    To access a property, we can use:
+
+    The dot notation: obj.property.
+    Square brackets notation obj["property"]. Square brackets allow taking the key from a variable, like obj[varWithKey].
+    Additional operators:
+
+    To delete a property: delete obj.prop.
+    To check if a property with the given key exists: "key" in obj.
+    To iterate over an object: for (let key in obj) loop.
+    What we’ve studied in this chapter is called a “plain object”, or just Object.
+
+    There are many other kinds of objects in JavaScript:
+
+    Array to store ordered data collections,
+    Date to store the information about the date and time,
+    Error to store the information about an error.
+    …And so on.
+    They have their special features that we’ll study later. Sometimes people say something like “Array type” or “Date type”, but formally they are not types of their own, but belong to a single “object” data type. And they extend it in various ways.
+
+    Objects in JavaScript are very powerful. Here we’ve just scratched the surface of a topic that is really huge. We’ll be closely working with objects and learning more about them in further parts of the tutorial.
+
+    
