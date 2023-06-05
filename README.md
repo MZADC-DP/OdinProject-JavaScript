@@ -270,3 +270,28 @@ DOM Manipulation And Events
 
 
 Started on JavaScript Projects 30
+
+Fundamentals Part 5
+
+    Objects
+
+    1. Used to store keyed collections of various data and more complex entities.
+    2. Consists of a Key:Value pair. Key is a string, Value can be any type.
+
+    Example: Creating an Object
+
+        let user = new Object();
+        let user = {};
+
+    Objects can be created using either of the 2 syntaxes above.
+
+
+    Example: Placing Properties into the Object
+
+        let user = 
+        { 
+            name: "John",
+            age : 20
+        };
+
+    Every property has a Key before the colon :, and a value on the right of it.
